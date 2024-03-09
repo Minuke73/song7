@@ -11,7 +11,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
-<title>3학년_1_18p_개똥아내려라_20240214</title>
+<title>3학년_1_18p_개똥아내려라_20240310</title>
 <!-- write your code here -->
 <style>
   #animation_container, #_preload_div_ {
@@ -341,6 +341,27 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,70,70);
+(lib.play_bg = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// 레이어_2
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#444444").s().p("AizC0QhKhLAAhpQAAhpBKhKQBLhLBoABQBqgBBKBLQBKBKAABpQAABphKBLQhKBKhqAAQhoAAhLhKgAg+hmQgQAJAAATIAACWQAAASAQAJQAHAEAJAAQAJAAAHgEICChMQAQgIAAgTQAAgSgQgJIiChLQgIgFgIAAQgIAAgIAFg");
+	this.shape.setTransform(48.325,48.75);
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#FFFFFF").s().p("AhRBnQgPgJAAgSIAAiWQAAgTAQgJQAQgKAPAKICCBMQAQAJAAARQAAATgQAJIiCBLQgHAFgJAAQgIAAgIgFg");
+	this.shape_1.setTransform(50.175,48.725);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(22.9,23.3,50.9,50.900000000000006);
 (lib.stop = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -556,7 +577,7 @@ if (reversed == null) { reversed = false; }
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-545,39.9,70,70);
 // stage content:
-(lib._3학년_1_18p_개똥아내려라_20240214 = function(mode,startPosition,loop,reversed) {
+(lib._3학년_1_18p_개똥아내려라_20240310 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = false; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -581,34 +602,44 @@ if (reversed == null) { reversed = false; }
 		/*메뉴 네비게이션*/
 		_this.listen_btn.on('click', function () {
 			_this.gotoAndStop('노래듣기');
+			_this.play_btn.visible = true;
 		});
 		_this.expert_btn.on('click', function () {
 			_this.gotoAndStop('전문가창');
+			_this.play_btn.visible = true;
 		});
 		_this.listen2_btn.on('click', function () {
 			_this.gotoAndStop('반주듣기');
+			_this.play_btn.visible = true;
 		});
 		_this.singAlong_btn.on('click', function () {
 			_this.gotoAndStop('따라부르');
+			_this.play_btn.visible = true;
 		});
 		/*플레이컨트롤*/
 		_this.play_btn.on('click', function () {
 			_this.play();
+			_this.play_btn.visible = false;
 		});
 		_this.pause_btn.on('click', function () {
 			_this.stop();
+			_this.play_btn.visible = true;
 		});
 		_this.stop1_btn.on('click', function () {
 			_this.gotoAndStop('노래듣기');
+			_this.play_btn.visible = true;
 		});
 		_this.stop2_btn.on('click', function () {
 			_this.gotoAndStop('전문가창');
+			_this.play_btn.visible = true;
 		});
 		_this.stop4_btn.on('click', function () {
 			_this.gotoAndStop('반주듣기');
+			_this.play_btn.visible = true;
 		});
 		_this.stop3_btn.on('click', function(){
 			_this.gotoAndStop('따라부르');
+			_this.play_btn.visible = true;
 		});
 	}
 	this.frame_383 = function() {
@@ -1554,6 +1585,8 @@ if (reversed == null) { reversed = false; }
 	this.shape_169.setTransform(199.0162,510.3316,2.4308,2.4307);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_169},{t:this.shape_168},{t:this.shape_167},{t:this.shape_166},{t:this.shape_165},{t:this.shape_164},{t:this.shape_163},{t:this.shape_162},{t:this.shape_161},{t:this.shape_160},{t:this.shape_159},{t:this.shape_158},{t:this.shape_157},{t:this.shape_156}]}).to({state:[{t:this.shape_169},{t:this.shape_168},{t:this.shape_167},{t:this.shape_166},{t:this.shape_165},{t:this.shape_164},{t:this.shape_163},{t:this.shape_162},{t:this.shape_161},{t:this.shape_160},{t:this.shape_159},{t:this.shape_158},{t:this.shape_157},{t:this.shape_156}]},384).to({state:[{t:this.shape_169},{t:this.shape_168},{t:this.shape_167},{t:this.shape_166},{t:this.shape_165},{t:this.shape_164},{t:this.shape_163},{t:this.shape_162},{t:this.shape_161},{t:this.shape_160},{t:this.shape_159},{t:this.shape_158},{t:this.shape_157},{t:this.shape_156}]},382).to({state:[{t:this.shape_169},{t:this.shape_168},{t:this.shape_167},{t:this.shape_166},{t:this.shape_165},{t:this.shape_164},{t:this.shape_163},{t:this.shape_162},{t:this.shape_161},{t:this.shape_160},{t:this.shape_159},{t:this.shape_158},{t:this.shape_157},{t:this.shape_156}]},639).wait(384));
 	// bg
+	this.instance_5 = new lib.play_bg("synched",0);
+	this.instance_5.setTransform(562.5,750.25,1,1,0,0,0,48.3,48.8);
 	this.shape_170 = new cjs.Shape();
 	this.shape_170.graphics.f("#FFFFFF").s().p("EAbGAwvQh5AAhWhWQhWhWAAh6QAAh6hWhWQhWhVh6AAMgjnAAAQh5AAhWBVQhWBWAAB6QAAB6hWBWQhWBWh6AAMg7mAAAQjsAAioioQininAAjsMAAAhPnQAAjsCnioQCoinDsAAMCs7AAAQDsAACoCnQCnCoAADsMAAABPnQAADsinCnQioCojsAAg");
 	this.shape_170.setTransform(639.325,457.45);
@@ -1566,7 +1599,7 @@ if (reversed == null) { reversed = false; }
 	this.shape_173 = new cjs.Shape();
 	this.shape_173.graphics.f("#ED1C24").s().p("At7FeIAAiUIPPAAIAAonIPQAAIAAK7gAwjFeIAAq7ICoAAIAAInIAACUgAt7DKIAAonIPPAAIAAIngAt7DKgAt7ldg");
 	this.shape_173.setTransform(1097.175,248.575);
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_173},{t:this.shape_172},{t:this.shape_171},{t:this.shape_170}]}).wait(1789));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_173},{t:this.shape_172},{t:this.shape_171},{t:this.shape_170},{t:this.instance_5}]}).wait(1789));
 	this._renderFirstFrame();
 }).prototype = p = new lib.AnMovieClip();
 p.nominalBounds = new cjs.Rectangle(640.5,400,640,400);
@@ -1715,7 +1748,7 @@ function handleComplete(evt,comp) {
 	var preloaderDiv = document.getElementById("_preload_div_");
 	preloaderDiv.style.display = 'none';
 	canvas.style.display = 'block';
-	exportRoot = new lib._3학년_1_18p_개똥아내려라_20240214();
+	exportRoot = new lib._3학년_1_18p_개똥아내려라_20240310();
 	stage = new lib.Stage(canvas);
 	stage.enableMouseOver();	
 	//Registers the "tick" event listener.
